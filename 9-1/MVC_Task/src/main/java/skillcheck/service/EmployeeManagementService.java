@@ -103,12 +103,12 @@ public final class EmployeeManagementService extends BaseService implements Empl
                         this.resultSet.getString("programingLanguage"),
                         this.resultSet.getString("comment"));
                 
-                employeeBean.setEmpId("empId");
-                employeeBean.setPassword("password");
-                employeeBean.setname("name");
-                employeeBean.setMail("mail");
-                employeeBean.setProgramingLanguage("programingLanguage");
-                employeeBean.setComment("comment");
+                employeeBean.setEmpId(meta.getColumnClassName(1));
+                employeeBean.setPassword(meta.getColumnClassName(2));
+                employeeBean.setname(meta.getColumnClassName(3));
+                employeeBean.setMail(meta.getColumnClassName(4));
+                employeeBean.setProgramingLanguage(meta.getColumnClassName(5));
+                employeeBean.setComment(meta.getColumnClassName(6));
       
 
                 // 社員情報リストへ追加

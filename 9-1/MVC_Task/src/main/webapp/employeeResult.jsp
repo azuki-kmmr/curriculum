@@ -68,7 +68,7 @@
                 <!-- FIXME Step-2-3: 社員情報一覧に表示する内容を式（Expression）を用いて表示しなさい。 -->
                 <!-- Tips: ループにより取得したリスト内の社員情報Beanを使用すること -->
                 <td id="empId"><%=emp.getEmpId()%></td>
-                <td title="<%=emp.getName()%>"><%=emp.getName()%></td>
+                <td title="<%=emp.getname()%>"><%=emp.getname()%></td>
                 <td title="<%=emp.getMail()%>"><%=emp.getMail()%>"</td>
                 <td title="<%=emp.getProgramingLanguage()%>"><%=emp.getProgramingLanguage()%></td>
                 <td title="<%=emp.getComment()%>"><%=emp.getComment()%></td>
